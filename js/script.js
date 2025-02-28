@@ -6,3 +6,7 @@ function changeBg(){
     const color = 'rgb'+`(${rgbValue1},${rgbValue2},${rgbValue3})`;
     document.body.style.background = color;
 }
+
+
+const dateField = document.getElementById('date-field');
+dateField.innerHTML =getDayDate();
