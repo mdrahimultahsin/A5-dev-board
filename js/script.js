@@ -18,3 +18,16 @@ const dateField = document.getElementById('date-field');
 dateField.innerHTML =getDayDate();
 
 
+//Complete button function
+const completeButtons = document.querySelectorAll('.complete-btn');
+for(const btn of completeButtons){
+    btn.addEventListener('click',function(){
+        btn.setAttribute('disabled','true');
+        alert('Board added Successfully');
+        btn.classList.add('opacity-25');
+        btn.classList.remove('cursor-pointer');
+    })
+}
+
+
+
