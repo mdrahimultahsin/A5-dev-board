@@ -25,3 +25,11 @@ function getDayDate() {
       const yearDate = monthName+' '+date+' '+year;
       return `<p>${dayName}</p> <p class="font-semibold">${yearDate}</p>`;
 }
+
+
+
+//getInnnerTextByid
+function getInnerTextById(id){
+    const convertedText = Number(document.getElementById(id).innerText);
+    return convertedText
+}
