@@ -33,3 +33,8 @@ function getInnerTextById(id){
     const convertedText = Number(document.getElementById(id).innerText);
     return convertedText
 }
+
+//setInnerTextById
+function setInnerTextById(id,value){
+    document.getElementById(id).innerText = value;
+}

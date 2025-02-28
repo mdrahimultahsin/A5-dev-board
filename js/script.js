@@ -18,16 +18,22 @@ dateField.innerHTML = getDayDate();
 
 //Complete button function
 const completeButtons = document.querySelectorAll(".complete-btn");
-const taskAssigned = getInnerTextById("task-assigned-number");
-let taskSum = 6;
+let taskSum = getInnerTextById("task-assigned-number");
+let completeTaskSum = getInnerTextById("completed-task");
 for (const btn of completeButtons) {
   btn.addEventListener("click", function () {
     btn.setAttribute("disabled", "true");
     alert("Board added Successfully");
     btn.classList.add("opacity-25");
     btn.classList.remove("cursor-pointer");
+
+    //Task Assigned Decremnet
     taskSum -= 1;
-    document.getElementById("task-assigned-number").innerText = "0" + taskSum;
+    setInnerTextById("task-assigned-number",taskSum)
+
+    //Task Completed Incremnet
+    completeTaskSum +=1;
+    setInnerTextById('completed-task',completeTaskSum);
 
     //Add History
     const HistoryContainer = document.querySelector('#history-container');
