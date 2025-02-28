@@ -7,6 +7,14 @@ function changeBg(){
     document.body.style.background = color;
 }
 
+//Redirect to blog page
+document.getElementById('discover-btn').addEventListener('click',function(){
+    window.location.href = 'blog.html';
+})
 
+
+//Show date function
 const dateField = document.getElementById('date-field');
 dateField.innerHTML =getDayDate();
+
+
