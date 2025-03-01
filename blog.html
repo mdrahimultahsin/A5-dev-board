@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Link Tailwind -->
+    <!-- Link Tailwind  Daisy UI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Customization -->
     <style type="text/tailwindcss">
@@ -40,9 +41,99 @@
          </div>
      </header>
     <!-- Header End -->
+     <!-- Main Section -->
+     <main class="w-full md:max-w-7xl mx-auto px-6 py-5 rounded-2xl">
+        <h1 class="font-bold text-center text-3xl">Blogs</h1>
+        <!-- Card Container -->
+         <div class="mt-5 flex flex-col gap-4">
+            <!-- Card-1 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300 px-3">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-1: What are the different ways to select an element in the DOM?</div>
+                    <div class="collapse-content py-3">
+                        <h2 class="font-semibold text-lg">There are basically 5 ways to select an element in the DOM(Document Object Model). These Are:</h2>
+                        <ul class="pl-7 space-y-2">
+                            <li class="list-disc">
+                               <span class="font-semibold">Using getElementsByTagName("tag"):</span>  When Using this it selects all elements with the specific tag name. It returns as an HTML collection. Html collection like as an array but not like same to same array.<br>
+                            <span class="mt-1 font-medium text-blue">Simple Example:</span>
+                                <div id="code-display" class="bg-primary-bg mt-2 p-2 px-4">
+
+                                </div>
+
+                            </li>
+                            <li class="list-disc">
+                               <span class="font-semibold">Using getElementsByClassName("class"):</span> When Using this it selects all elements with the specific tag name. It also returns as an HTML collection.<br>
+                            <span class="mt-1 font-medium text-blue">Simple Example:</span>
+                                <div id="code-display2" class="bg-primary-bg mt-2 p-2 px-4">
+
+                                </div>
+
+                            </li>
+                            <li class="list-disc">
+                               <span class="font-semibold">Using getElementById("id"):</span>  When using getElementById Select an element by its id (unique per page). Its return as a A single element.<br>
+                            <span class="mt-1 font-medium text-blue">Simple Example:</span>
+                                <div id="code-display3" class="bg-primary-bg mt-2 p-2 px-4">
+
+                                </div>
+
+                            </li>
+                            <li class="list-disc">
+                               <span class="font-semibold">Using querySelector("selector"):</span>   When using querySelector() its Selects the first matching element using CSS selectors (#id, .class, tag).It return as single element<br>
+                            <span class="mt-1 font-medium text-blue">Simple Example:</span>
+                                <div id="code-display4" class="bg-primary-bg mt-2 p-2 px-4">
+
+                                </div>
+
+                            </li>
+                            <li class="list-disc">
+                               <span class="font-semibold">Using querySelectorAll("selector"):</span>  When using getElementById Selects all matching elements using CSS-style selectors. Its return as NodeList.<br>
+                            <span class="mt-1 font-medium text-blue">Simple Example:</span>
+                                <div id="code-display5" class="bg-primary-bg mt-2 p-2 px-4">
+
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- Card-2 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+                    <div class="collapse-content py-2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consectetur, soluta maxime quae ipsum accusantium ratione consequatur? Ipsam, ea ipsa. Ea eius nesciunt quia suscipit, incidunt eos delectus numquam corporis.</p>
+                    </div>
+                </div>
+            <!-- Card-3 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-3: What is event delegation in the DOM?</div>
+                    <div class="collapse-content py-2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consectetur, soluta maxime quae ipsum accusantium ratione consequatur? Ipsam, ea ipsa. Ea eius nesciunt quia suscipit, incidunt eos delectus numquam corporis.</p>
+                    </div>
+                </div>
+            <!-- Card-4 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-4: What is event bubbling in the DOM?</div>
+                    <div class="collapse-content py-2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consectetur, soluta maxime quae ipsum accusantium ratione consequatur? Ipsam, ea ipsa. Ea eius nesciunt quia suscipit, incidunt eos delectus numquam corporis.</p>
+                    </div>
+                </div>
+            <!-- Card-5 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+                    <div class="collapse-content py-2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consectetur, soluta maxime quae ipsum accusantium ratione consequatur? Ipsam, ea ipsa. Ea eius nesciunt quia suscipit, incidunt eos delectus numquam corporis.</p>
+                    </div>
+                </div>
 
 
-    <script src="utilities/utitlities.js"></script>
+         </div>
+     </main>
+
+
     <script src="js/blog.js"></script>
 </body>
 </html>
