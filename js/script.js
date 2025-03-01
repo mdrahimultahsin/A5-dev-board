@@ -20,13 +20,13 @@ dateField.innerHTML = getDayDate();
 const completeButtons = document.querySelectorAll(".complete-btn");
 let taskSum = getInnerTextById("task-assigned-number");
 let completeTaskSum = getInnerTextById("completed-task");
-// let cartTitle =document.getElementById("card-title").innerText;
+
 for (const btn of completeButtons) {
   btn.addEventListener("click", function (event) {
     const getParent = event.target.parentElement.parentElement.parentElement;
     const cardTitle = getParent.querySelector("#card-title").innerText;
     btn.setAttribute("disabled", "true");
-    alert("Board added Successfully");
+    alert("Board Updated Successfully");
     btn.classList.add("opacity-25");
     btn.classList.remove("cursor-pointer");
 
@@ -36,7 +36,7 @@ for (const btn of completeButtons) {
 
     //All Task Completed Alert Message
     if (taskSum === 0) {
-      alert("Completed All Task");
+      alert("congrates!!! You have completed all the current task");
     }
 
     //Task Completed Incremnet
@@ -65,5 +65,5 @@ for (const btn of completeButtons) {
       }
     });
   
-}
+};
 

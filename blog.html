@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Customization -->
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary-bg: #F4F7FF;
+          --color-text-primary: #00303C;
+          --color-blue: #3752FD;
+          --color-border-color : rgba(55, 82, 253, 0.2);
+        --font-primary:"Poppins", sans-serif;
+        }
+      </style>
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 </head>
-<body>
-    <h1>Blog Page</h1>
-    <script src="js/script.js"></script>
+<body class="bg-primary-bg text-text-primary px-4 pt-6 pb-15 font-primary">
+    <!-- Header Start -->
+    <header class="w-full md:max-w-7xl mx-auto bg-white px-6 py-5 flex justify-between items-center rounded-2xl">
+        <!-- Logo -->
+        <div>
+            <a href="index.html" class="flex            items-center gap-2">
+                <img class="w-10 md:w-12" src="assets/logo.png" alt="">
+                <h2 class=" text-xl md:text-3xl">Dev<span class="font-bold">Board</span></h2>
+            </a>
+        </div>
+        <!-- Button Area-->
+         <div class="flex justify-between gap-10">
+            <button id="back-to-desk-btn" class="p-4 font-medium rounded-lg cursor-pointer bg-blue text-white">Back to Desk</button>
+         </div>
+     </header>
+    <!-- Header End -->
+
+
+    <script src="utilities/utitlities.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>
