@@ -20,8 +20,11 @@ dateField.innerHTML = getDayDate();
 const completeButtons = document.querySelectorAll(".complete-btn");
 let taskSum = getInnerTextById("task-assigned-number");
 let completeTaskSum = getInnerTextById("completed-task");
+// let cartTitle =document.getElementById("card-title").innerText;
 for (const btn of completeButtons) {
-  btn.addEventListener("click", function () {
+  btn.addEventListener("click", function (event) {
+    const getParent = event.target.parentElement.parentElement.parentElement;
+    const cardTitle = getParent.querySelector("#card-title").innerText;
     btn.setAttribute("disabled", "true");
     alert("Board added Successfully");
     btn.classList.add("opacity-25");
@@ -29,27 +32,38 @@ for (const btn of completeButtons) {
 
     //Task Assigned Decremnet
     taskSum -= 1;
-    setInnerTextById("task-assigned-number",taskSum)
+    setInnerTextById("task-assigned-number", "0" + taskSum);
+
+    //All Task Completed Alert Message
+    if (taskSum === 0) {
+      alert("Completed All Task");
+    }
 
     //Task Completed Incremnet
-    completeTaskSum +=1;
-    setInnerTextById('completed-task',completeTaskSum);
+    completeTaskSum += 1;
+    setInnerTextById("completed-task", completeTaskSum);
 
     //Add History
-    const HistoryContainer = document.querySelector('#history-container');
+    const HistoryContainer = document.querySelector("#history-container");
     const div = document.createElement("div");
-    div.setAttribute('class',"history p-3 bg-primary-bg rounded-lg text-black")
+    div.setAttribute(
+      "class",
+      "history p-3 bg-primary-bg rounded-lg text-black"
+    );
     div.innerHTML = `
-         <p>You have Complete The Task Add Dark Mod at 12:48:15 PM</p>
+         <p>You have Complete The Task ${cardTitle} at ${getTime()}</p>
         `;
-        
-        HistoryContainer.appendChild(div);
+
+    HistoryContainer.appendChild(div);
   });
-    document.getElementById('clear-history-btn').addEventListener('click',function(){
-            const histories =document.querySelectorAll('.history');
-            for(const singleHistory of histories){
-                singleHistory.classList.add('hidden');
-            }
-        })
+  document
+    .getElementById("clear-history-btn")
+    .addEventListener("click", function () {
+      const histories = document.querySelectorAll(".history");
+      for (const singleHistory of histories) {
+        singleHistory.classList.add("hidden");
+      }
+    });
   
 }
+

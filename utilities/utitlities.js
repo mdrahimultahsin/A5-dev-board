@@ -27,6 +27,12 @@ function getDayDate() {
 }
 
 
+//Get Right Now time function
+function getTime(){
+  const today = new Date();
+const time = today.toLocaleTimeString();
+return time;
+}
 
 //getInnnerTextByid
 function getInnerTextById(id){
