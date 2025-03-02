@@ -22,11 +22,6 @@
         --font-primary:"Poppins", sans-serif;
         }
       </style>
-      <style>
-        *{
-            border: 1px solid red;
-        }
-      </style>
     <!-- Favicon -->
      <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 </head>
@@ -107,7 +102,7 @@
                     <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed px-3 box-border">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
                     <div class="collapse-content py-2 px-3">
                         <h2 class="font-semibold text-lg">Basically innerText,textContent, innerHTML these are usually use to get or set value in an element.But these have difference.</h2>
-                        <ul class="px-3 space-y-2 mt-2">
+                        <ul class="px-5 space-y-2 mt-2">
                             <li class="list-disc"><span class="font-semibold">innerText :</span>When need to get or set only text(ignoring hidden element) for this use innerText.
                                 
                             </li>
@@ -126,7 +121,7 @@
                             </div> 
                         </div> 
                     </div>
-                    
+                  </div>  
                 </div>
             <!-- Card-3 -->
                 <div class="collapse collapse-arrow bg-base-100 border border-base-300">
@@ -140,7 +135,7 @@
     
                             </div> 
                             <div class="mt-2">
-                                <p><span class="font-semibold">Explanation: </span>In this Example add 'click' event listener in the parent instead of child.For this when add a new child elemnet dynamically add event listener should be worked this child as well.</p>
+                                <p><span class="font-semibold">Explanation: </span>In this Example add 'click' event listener in the parent instead of child.For this when add a new child elemnet dynamically, event listener should be worked this child as well.</p>
                             </div>
                         </div>
                     </div>
@@ -150,14 +145,20 @@
                     <input type="radio" name="my-accordion-2" checked="checked" />
                     <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-4: What is event bubbling in the DOM?</div>
                     <div class="collapse-content py-2">
-                        <p><span class="font-medium">Event Bubbling</span>span is a behavior in the DOM where an event is triggered in the child element, it bubbles up to the parent and then the whole document.</p>
+                        <p><span class="font-medium">Event Bubbling</span> is a behavior in the DOM where an event is triggered in the child element, it bubbles up to the parent and then the whole document. Event Bubbling works — when click on an element and inside another element.</p>
+                        <ul class="px-3">
+                            <li class="list-disc">When click in a event. The event fires on the target element first.</li>
+                            <li class="list-disc"> Then, it "bubbles up" through all its parents elements.</li>
+                        </ul>
                         <div>
                             <span class="font-medium text-blue">Basic Example:</span>
-                            <div id="eventDelegate" class="bg-primary-bg mt-2 p-2 px-4">
+                            <div id="eventBubble" class="bg-primary-bg mt-2 p-2 px-4">
     
                             </div> 
                             <div class="mt-2">
-                                <p><span class="font-semibold">Explanation: </span>In this Example add 'click' event listener in the parent instead of child.For this when add a new child elemnet dynamically add event listener should be worked this child as well.</p>
+                                <p><span class="font-semibold">Explanation: </span>In this example when click in the button, The click event firstly fired on button and then bubbles up to the parent div. So that <br>output is ://Button clicked! //Its fired first
+                                    <br>
+                                    //Parent DIV clicked //its fired after the button click</p>
                             </div>
                         </div>
                     </div>
@@ -167,7 +168,23 @@
                     <input type="radio" name="my-accordion-2" checked="checked" />
                     <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</div>
                     <div class="collapse-content py-2">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consectetur, soluta maxime quae ipsum accusantium ratione consequatur? Ipsam, ea ipsa. Ea eius nesciunt quia suscipit, incidunt eos delectus numquam corporis.</p>
+                        <ul class="px-3">
+                            <li class="list-decimal"><span class="font-semibold">Create Elements: </span> To create element in the js use document.createElement(). It allows to create element using js.
+                            <div id="createElement" class="bg-primary-bg mt-2 p-2 px-4">
+
+                            </div>
+                            </li>
+                            <li class="list-decimal"><span class="font-semibold">Add Elements: </span> To add elements basically use appendChild() & append(). Both are use to add child using js. But these have difference. appendChild ()allows to add specific single element at a time. But append () allows to add multiple element at a time also allows to add text in the element.
+                            <div id="addElement" class="bg-primary-bg mt-2 p-2 px-4">
+
+                            </div>
+                            </li>
+                            <li class="list-decimal"><span class="font-semibold">Remove Element: </span> To remove an element basically use removeChild() & remove().removeChild() use to remove Element from the parent. And remove() use to remove Element from the dom.
+                            <div id="removeElement" class="bg-primary-bg mt-2 p-2 px-4">
+
+                            </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 

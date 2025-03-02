@@ -103,5 +103,47 @@ document.getElementById("eventDelegate").innerText = `
   });
 </script>
 `;
+document.getElementById("eventBubble").innerText = `
+<div id="parent" style="padding: 20px; background-color: lightgray;">  
+<button id="child">Click Me</button>
+</div>
+// Event Listener In the parent
+document.getElementById("parent")
+.addEventListener("click", function() {    
+console.log("Parent DIV clicked!");
+});
+// Event Listener In the child
+document.getElementById("child").
+addEventListener("click", function() {    
+console.log("Button clicked!");
+});
+//Output:
+//Button clicked!
+//Parent DIV clicked!
+`;
+document.getElementById("createElement").innerText = `
+const newDiv = document.createElement("div"); // Creates a <div>
+newDiv.textContent = "Hello, I am a new div!"; // Adds text
+newDiv.classList.add("new-class"); // Adds a class
+`;
+document.getElementById("addElement").innerText = `
+const newDiv = document.createElement("div");  // Creates a <div>
+newDiv.innerText = "Hello, I am a new div!";   // Adds textnewDiv.classList.add("new-class");        // Adds a class
+//add element using appendChild()
+document.body.appendChild(newDiv); // Add element
+
+//elements using append()
+const newDiv = document.createElement("div");
+newDiv.textContent = "Hello, I am a new div!";
+const newText = "This is some text.";
+document.append(newDiv, newText); // Adds both to the document
+`;
+document.getElementById("removeElement").innerText = `
+const parent = document.getElementById("parent");
+const child = document.getElementById("child");
+parent.removeChild(child);     // Removes child from parent
+child.remove();             // Removes #child from the DOM
+
+`;
 
 
