@@ -53,5 +53,55 @@ console.log(msg)  //OUTPUT: // "Hello" // "World"
 }
 <\/script>
 `;
+document.getElementById("innerT").innerText = `
+<div id="example">
+    Hello
+   <span style="display: none;">World</span>!  
+   <p><b>Bold Text</b></p>
+ </div>
+ 
+ <!--Js Code-->
+ <script>
+
+ //get html content of an element using innerHTML
+ console.log(document.getElementById("example")
+ .innerHTML);
+
+ //Output:Hello <span style="display: none;">World</span>!<p><b>Bold Text</b></p>
+ 
+ 
+ //get text content of an element ignoring hidden element 
+ console.log(document.getElementById("example")
+ .innerText);
+
+//Output:
+// Hello !
+//Bold Text
+ 
+ //get all text content of an element including hidden text
+ console.log(document.getElementById("example")
+ .textContent);
+
+ //Output:
+ //Hello World!
+ //Bold Text 
+ </script>
+`;
+document.getElementById("eventDelegate").innerText = `
+<div id="button-container">
+  <button class="btn">Button 1</button>
+  <button class="btn">Button 2</button>
+  <button class="btn">Button 3</button>
+</div>
+
+<script>
+  document.getElementById("button-container").addEventListener("click", function (event) {
+    const btns = document.querySelectorALl('.btn');
+    for(const singleBtn of btns){
+    console.log('Clicked Btn');
+    }
+  });
+</script>
+`;
 
 
