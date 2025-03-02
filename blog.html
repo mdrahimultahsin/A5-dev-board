@@ -52,48 +52,48 @@
                     <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed px-2">Question-1: What are the different ways to select an element in the DOM?</div>
                     <div class="collapse-content py-3">
                         <h2 class="font-semibold text-lg">There are basically 5 ways to select an element in the DOM(Document Object Model). These Are:</h2>
-                        <ul class="px-3 space-y-2">
-                            <li class="list-disc">
-                               <span class="font-semibold">Using getElementsByTagName("tag"):</span>  When Using this it selects all elements with the specific tag name. It returns as an HTML collection. Html collection like as an array but not like same to same array.<br>
+                        <div class="px-3 space-y-2">
+                            <div class="list-disc">
+                               <span class="font-semibold">1. Using getElementsByTagName("tag"):</span>  When Using this it selects all elements with the specific tag name. It returns as an HTML collection. Html collection like as an array but not like same to same array.<br>
                             <span class="mt-1 font-medium text-blue">Simple Example:</span>
                                 <div id="code-display" class="bg-primary-bg mt-2 p-2 px-4">
 
                                 </div>
 
-                            </li>
-                            <li class="list-disc">
-                               <span class="font-semibold">Using getElementsByClassName("class"):</span> When Using this it selects all elements with the specific tag name. It also returns as an HTML collection.<br>
+                            </div>
+                            <div class="list-disc">
+                               <span class="font-semibold">2. Using getElementsByClassName("class"):</span> When Using this it selects all elements with the specific tag name. It also returns as an HTML collection.<br>
                             <span class="mt-1 font-medium text-blue">Simple Example:</span>
                                 <div id="code-display2" class="bg-primary-bg mt-2 p-2 px-4">
 
                                 </div>
 
-                            </li>
-                            <li class="list-disc">
-                               <span class="font-semibold">Using getElementById("id"):</span>  When using getElementById Select an element by its id (unique per page). Its return as a A single element.<br>
+                            </div>
+                            <div class="list-disc">
+                               <span class="font-semibold">3. Using getElementById("id"):</span>  When using getElementById Select an element by its id (unique per page). Its return as a A single element.<br>
                             <span class="mt-1 font-medium text-blue">Simple Example:</span>
                                 <div id="code-display3" class="bg-primary-bg mt-2 p-2 px-4">
 
                                 </div>
 
-                            </li>
-                            <li class="list-disc">
-                               <span class="font-semibold">Using querySelector("selector"):</span>   When using querySelector() its Selects the first matching element using CSS selectors (#id, .class, tag).It return as single element<br>
+                            </div>
+                            <div class="list-disc">
+                               <span class="font-semibold">4. Using querySelector("selector"):</span>   When using querySelector() its Selects the first matching element using CSS selectors (#id, .class, tag).It return as single element<br>
                             <span class="mt-1 font-medium text-blue">Simple Example:</span>
                                 <div id="code-display4" class="bg-primary-bg mt-2 p-2 px-4">
 
                                 </div>
 
-                            </li>
-                            <li class="list-disc">
-                               <span class="font-semibold">Using querySelectorAll("selector"):</span>  When using getElementById Selects all matching elements using CSS-style selectors. Its return as NodeList.<br>
+                            </div>
+                            <div class="list-disc">
+                               <span class="font-semibold">5. Using querySelectorAll("selector"):</span>  When using getElementById Selects all matching elements using CSS-style selectors. Its return as NodeList.<br>
                             <span class="mt-1 font-medium text-blue">Simple Example:</span>
                                 <div id="code-display5" class="bg-primary-bg mt-2 p-2 px-4">
 
                                 </div>
 
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             <!-- Card-2 -->
@@ -102,17 +102,17 @@
                     <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed px-3 box-border">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
                     <div class="collapse-content py-2 px-3">
                         <h2 class="font-semibold text-lg">Basically innerText,textContent, innerHTML these are usually use to get or set value in an element.But these have difference.</h2>
-                        <ul class="px-5 space-y-2 mt-2">
-                            <li class="list-disc"><span class="font-semibold">innerText :</span>When need to get or set only text(ignoring hidden element) for this use innerText.
+                        <div class="px-5 space-y-2 mt-2">
+                            <div class="list-disc"><span class="font-semibold">1. innerText :</span>When need to get or set only text(ignoring hidden element) for this use innerText.
                                 
-                            </li>
-                            <li class="list-disc"><span class="font-semibold">innerHTML :</span>innerHtml use When need Gets or sets the HTML content of an element with tags or any selector. innerHtml also shows hidden element,comments.
+                            </div>
+                            <div class="list-disc"><span class="font-semibold">2. innerHTML :</span>innerHtml use When need Gets or sets the HTML content of an element with tags or any selector. innerHtml also shows hidden element,comments.
                             But innerText not shows hidden element or text    
-                            </li>
-                            <li class="list-disc"><span class="font-semibold">textContent :</span>textContent basically use when need to Gets or sets all text content. Its smiler like innerText but have difference.textContent gets or sets all text content, also from hidden elements.	But innerText Not get hidden texts.<br>
+                            </div>
+                            <div class="list-disc"><span class="font-semibold">3. textContent :</span>textContent basically use when need to Gets or sets all text content. Its smiler like innerText but have difference.textContent gets or sets all text content, also from hidden elements.	But innerText Not get hidden texts.<br>
                               
-                            </li>                            
-                        </ul>
+                            </div>                            
+                        </div>
                     
                         <div class="pr-3">
                             <span class="mt-1 font-medium text-blue">Example:</span>
@@ -168,23 +168,23 @@
                     <input type="radio" name="my-accordion-2" checked="checked" />
                     <div class="collapse-title font-semibold text-lg border-b-2 border-border-color border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</div>
                     <div class="collapse-content py-2">
-                        <ul class="px-3">
-                            <li class="list-decimal"><span class="font-semibold">Create Elements: </span> To create element in the js use document.createElement(). It allows to create element using js.
+                        <div class="px-3">
+                            <div class="list-decimal"><span class="font-semibold">1. Create Elements: </span> To create element in the js use document.createElement(). It allows to create element using js.
                             <div id="createElement" class="bg-primary-bg mt-2 p-2 px-4">
 
                             </div>
-                            </li>
-                            <li class="list-decimal"><span class="font-semibold">Add Elements: </span> To add elements basically use appendChild() & append(). Both are use to add child using js. But these have difference. appendChild ()allows to add specific single element at a time. But append () allows to add multiple element at a time also allows to add text in the element.
+                            </div>
+                            <div class="list-decimal"><span class="font-semibold">2. Add Elements: </span> To add elements basically use appendChild() & append(). Both are use to add child using js. But these have difference. appendChild ()allows to add specific single element at a time. But append () allows to add multiple element at a time also allows to add text in the element.
                             <div id="addElement" class="bg-primary-bg mt-2 p-2 px-4">
 
                             </div>
-                            </li>
-                            <li class="list-decimal"><span class="font-semibold">Remove Element: </span> To remove an element basically use removeChild() & remove().removeChild() use to remove Element from the parent. And remove() use to remove Element from the dom.
+                            </div>
+                            <div class="list-decimal"><span class="font-semibold">3. Remove Element: </span> To remove an element basically use removeChild() & remove().removeChild() use to remove Element from the parent. And remove() use to remove Element from the dom.
                             <div id="removeElement" class="bg-primary-bg mt-2 p-2 px-4">
 
                             </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
